@@ -10,17 +10,18 @@
     "ios": "expo start -c --ios",
     "web": "expo start -c --web",
     "clean": "rm -rf .expo node_modules",
-    "postinstall": "npx tailwindcss -i ./global.css -o ./node_modules/.cache/nativewind/global.css",
-    "lint": "eslint ."
+    "postinstall": "npx tailwindcss -i ./global.css -o ./node_modules/.cache/nativewind/global.css"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.0",
     "@react-navigation/native-stack": "^7.2.0",
+    "@react-navigation/stack": "^7.1.2",
     "@rn-primitives/avatar": "~1.1.0",
     "@rn-primitives/label": "^1.1.0",
     "@rn-primitives/portal": "~1.1.0",
     "@rn-primitives/progress": "~1.1.0",
+    "@rn-primitives/separator": "^1.1.0",
     "@rn-primitives/slot": "~1.1.0",
     "@rn-primitives/table": "^1.1.0",
     "@rn-primitives/tooltip": "~1.1.0",
@@ -52,9 +53,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@types/react": "~18.3.12",
-    "eslint": "^9.21.0",
-    "typescript": "^5.3.3",
-    "typescript-eslint": "^8.25.0"
+    "typescript": "^5.3.3"
   },
   "private": true
 }
