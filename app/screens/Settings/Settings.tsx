@@ -25,30 +25,40 @@ export default function Settings({ navigation }: { navigation: any }) {
 				<Text>Editar perfil</Text>
 				<ArrowRight size={28} color={currentTheme.primary} />
 			</Button>
-			<Separator className="my-2" />
+			{/* <Separator className="my-2" />
 			<Button
 				variant={"ghost"}
 				className="flex-row justify-between items-center"
 			>
 				<Text>Alterar senha</Text>
 				<ArrowRight size={28} color={currentTheme.primary} />
+			</Button> */}
+			<Separator className="my-2" />
+			<Button
+				variant={"ghost"}
+				className="flex-row justify-between items-center"
+				onPress={() => navigation.navigate("EditBalance")}
+			>
+				<Text>Alterar caixa</Text>
+				<ArrowRight size={28} color={currentTheme.primary} />
 			</Button>
 			<Separator className="my-2" />
 			<Button
 				variant={"ghost"}
 				className="flex-row justify-between items-center"
+				onPress={() => navigation.navigate("EditBalance")}
 			>
-				<Text>Adicionar caixa</Text>
+				<Text>Sair da conta</Text>
 				<ArrowRight size={28} color={currentTheme.primary} />
 			</Button>
-			<Separator className="my-2" />
+			{/* <Separator className="my-2" />
 			<Button
 				variant={"ghost"}
 				className="flex-row justify-between items-center"
 			>
 				<Text>Suporte</Text>
 				<ArrowRight size={28} color={currentTheme.primary} />
-			</Button>
+			</Button> */}
 		</View>
 	);
 }
